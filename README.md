@@ -1,7 +1,7 @@
 A simple and straight C course, written for people who never programmed before.
 Target audience are students Technical Computer Science.
 
-All examples run unmodified on repl.it.
+No need to waste time installing a compiler, since examples run unmodified on repl.it.
 A course of 7 to 8 lessons of 2 hours each plus some homework should be enough to cover this material.
 
 In the end (of course) C++ is the target to aim at.
