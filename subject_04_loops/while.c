@@ -22,10 +22,14 @@ int main () {
     // It's one of the things that made C (and C++) code fast right from the start.
     // Not everyone likes this coding style, but then again not everyone likes C...
     
-    float a, b;
-    a = b = 1;
+    printf ("Exponential growth, however modest, eventually wins from linear growth!\n\n");
+    
+    float linear, exponential;
+    linear = exponential = 1;
 
-    while ((a *= 1.1) < ++b) {
-        printf ("%f %f\n", a, b);
+    printf ("  lin    exp\n");
+    printf (" =====  =====\n");
+    while (++linear > (exponential *= 1.1)) {
+        printf ("%6.2f %6.2f\n", linear, exponential);
     }
 }

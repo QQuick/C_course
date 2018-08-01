@@ -15,23 +15,18 @@ limitations under the License.
 */
 
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+
+void swap (float *a, float *b) {
+    float temp = *a;
+    *a = *b;
+    *b = temp;
+}
 
 int main () {
-    srand (time (NULL));
+    float a = 2.72;
+    float b = 3.14;
     
-    int factor1 = rand () % 11;
-    int factor2 = rand () % 11;
-    
-    int product;
-    printf ("How much is %d x %d?", factor1, factor2);
-    scanf ("%d", &product);
-    
-    if (product == factor1 * factor2) {
-        printf ("Correct");
-    }
-    else {
-        printf ("Not correct");
-    }
+    printf ("original: %.2f, %.2f\n", a, b);
+    swap (&a, &b);
+    printf ("swapped : %.2f, %.2f\n", a, b); 
 }

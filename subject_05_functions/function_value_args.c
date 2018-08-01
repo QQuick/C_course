@@ -15,23 +15,19 @@ limitations under the License.
 */
 
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+
+float average (float numbers [], int length) {
+    float sum = 0;
+    for (int index = 0; index < length; index++) {
+        sum += numbers [index];
+    }
+    return sum / length;
+}
 
 int main () {
-    srand (time (NULL));
+    float array1 [] = {10, 1.75, 7.25, 7.5, 8.5}; 
+    printf ("The average of the elements of array1 is: %.2f\n", average (array1, sizeof (array1) / sizeof (float)));
     
-    int factor1 = rand () % 11;
-    int factor2 = rand () % 11;
-    
-    int product;
-    printf ("How much is %d x %d?", factor1, factor2);
-    scanf ("%d", &product);
-    
-    if (product == factor1 * factor2) {
-        printf ("Correct");
-    }
-    else {
-        printf ("Not correct");
-    }
+    float array2 [] = {1, 1.5, 2}; 
+    printf ("The average of the elements of array2 is: %.2f\n", average (array2, sizeof (array2) / sizeof (float)));    
 }

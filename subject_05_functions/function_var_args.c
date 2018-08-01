@@ -15,23 +15,33 @@ limitations under the License.
 */
 
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include <stdarg.h>
 
-int main () {
-    srand (time (NULL));
+float average (int nrOfVarArgs, ...) {
+    va_list argp;
+    va_start (argp, nrOfVarArgs);
     
-    int factor1 = rand () % 11;
-    int factor2 = rand () % 11;
-    
-    int product;
-    printf ("How much is %d x %d?", factor1, factor2);
-    scanf ("%d", &product);
-    
-    if (product == factor1 * factor2) {
-        printf ("Correct");
+    float sum = 0;
+    for (int varArgIndex = 0; varArgIndex < nrOfVarArgs; varArgIndex++) {
+        float arg = va_arg (argp, double);
+        printf ("Argument: %.2f\n", arg);
+        sum += arg;
     }
-    else {
-        printf ("Not correct");
-    }
+    
+    va_end (argp);
+    return sum / nrOfVarArgs;
+}
+
+int main () {    
+    printf ("Average is: %.2f\n\n", average (
+        3,
+        9.5, 20.0, 40.5
+    ));
+    
+    printf ("Average is: %.2f\n\n", average (
+        9,
+        1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0
+    ));
+    
+    return 0;
 }

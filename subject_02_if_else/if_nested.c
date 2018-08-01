@@ -18,7 +18,7 @@ limitations under the License.
 #include <string.h>
 #include <stdbool.h>
 
-int main (void) {    
+int main () {    
     printf ("Do you like hardware? <y|n>");
     char hardwareAnswer [2];
     scanf ("%s", hardwareAnswer);
