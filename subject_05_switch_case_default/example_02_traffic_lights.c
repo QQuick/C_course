@@ -35,6 +35,11 @@ The may also be caused by external triggers, like sensor signals changing.
 #define yellowPhaseState 1
 #define redPhaseState 2
 
+void delay (float seconds) { // Expensive, somewhat portable hack...
+  float const environmentDependentFactor = 2e8;
+  for (int step = 0; step < seconds * environmentDependentFactor; step++);
+}
+
 int main () {
 
     // ====== Yellow blinking traffic light
@@ -158,8 +163,8 @@ int main () {
         }
  
         if (currentTime % 1000 == 0) {
-            printf ("%3i s      %c      %c %c %c", currentTime / 1000, yellowBlinkLightIsOn ? 'B' : '.', greenPhaseLightIsOn ? 'G' : '.', yellowPhaseLightIsOn ? 'Y' : '.', redPhaseLightIsOn ? 'R' : '.');
-            char dummy = getchar ();
+            printf ("%3i s      %c      %c %c %c\n", currentTime / 1000, yellowBlinkLightIsOn ? 'B' : '.', greenPhaseLightIsOn ? 'G' : '.', yellowPhaseLightIsOn ? 'Y' : '.', redPhaseLightIsOn ? 'R' : '.');
+            delay (1);
         }
     }
     return 0;

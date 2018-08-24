@@ -18,7 +18,7 @@ limitations under the License.
 
 int main (void) {
     printf ("What's your name? ");
-    char name [256];
+    char name [256];    // Room for a so called "string" of input characters
     scanf ("%s", name);
     printf ("Hello %s, I'm your computer!", name);
     return 0;
