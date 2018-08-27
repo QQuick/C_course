@@ -48,6 +48,15 @@ Node *create (char const *payload) {
     return node;
 }
 
+/*
+Traditionally called "walk", although "climb" would be a better word,
+the function below performs a "left to right, depth first" treewalk.
+
+- WHAT exactly is meant by "left to right, depth first"?
+- Draw the tree that's built up in this program (PLEASE DO INDEED) and the path followed through it.
+
+Most treewalks use this order of traversal, including the ones performed by compilers.
+*/    
 void walk (Node *node, int indentLevel) {
     if (node) {
         for (int indentIndex = 0; indentIndex < indentLevel; indentIndex++) {

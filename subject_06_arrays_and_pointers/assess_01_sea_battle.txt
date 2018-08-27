@@ -1,0 +1,19 @@
+Sea battle
+==========
+
+Write a sea battle game.
+The computer places ships randomly in a sea, denoted by a two dimensional array.
+Ships are X'es, water are .'s.
+There are three ship types:
+
+XX = Zephyr
+XXX = Destroyer
+XXXX = Cruiser
+
+You can guess coordinates of a ship and fire a missile.
+A ship is sunk if all it's X'es are hit.
+If all ships are sunk the game terminates.
+Try to sink all ships using the smallest amount of missiles.
+
+The sea with the ships should be displayed on the screen.
+No need to clear the screen, you can just scroll up the previous situation.

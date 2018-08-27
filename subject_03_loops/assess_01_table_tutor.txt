@@ -1,0 +1,10 @@
+Table tutor
+===========
+
+Write a program that helps children practice the multiplication tables from 1 to 10 in fixed order.
+It should pose questions like:
+
+How much is 7 x 8
+
+It should repeat the question until it has been answered correctly for at least three consecutive times.
+If a question has to be repeated for more than ten times, it should advise the pupil to get some sleep first.

@@ -1,0 +1,9 @@
+Adventure game
+==============
+
+Write a text based adventure game that allows you to move between several rooms,
+utilizing objects that you pick up in those rooms, like keys, explosives, ropes and axes.
+
+The basis is a large case statement, in which each case is a room.
+Objects that you pick up are stored in variables.
+You can only carry three objects simultaneously.

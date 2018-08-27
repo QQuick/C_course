@@ -1,0 +1,47 @@
+Electronic therapist
+====================
+
+Write a program that mimics a psychotherapist.
+It'll ask all kinds of personal questions and by its answers foster the illusion of talking to a real person.
+The replies of the psychotherapist, however general and vague, make use of former answers given by the client.
+
+Therapist (after some earlier questions, utilizing their answers, that are capitalized below):
+
+===============================================================================================================
+So your GRANDMOTHER kept you laying in a CRADLE until you were TWELVE?
+
+> YES
+
+How do you feel about laying in a CRADLE when staying with your GRANDMOTHER?
+
+> LOUSY
+
+TWELVE is very young to feel LOUSY, has it ever occured to you to hit your GRANDMOTHER with a BANANA?
+
+> SEVERAL TIMES
+
+So you've indeed considered to hit your GRANDMOTHER with a BANANA SEVERAL TIMES because you felt LOUSY
+
+> NO
+
+Seems I misunderstood you, how does it feel to be so misunderstood?
+
+> IT REALLY HURTS
+
+I am sorry that IT REALLY HURTS, is there any image associated with this experience?
+
+> THE IMAGE OF A WHITE ELEPHANT
+
+Why is THE IMAGE OF A WHITE ELEPHANT coming up if you feel IT REALLY HURTS?
+
+> I DON'T KNOW
+
+Did you look at THE IMAGE OF A WHITE ELEPHANT when you were laying in a CRADLE with your GRANDMOTHER at TWELVE?
+
+> ...
+
+===============================================================================================================
+
+
+N.B. THE ANSWERS TO EARLIER QUESTIONS SHOULD ALSO DETERMINE WHICH ADDITIONAL QUESTIONS ARE ASKED!
+

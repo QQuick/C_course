@@ -1,0 +1,21 @@
+Poem generator
+==============
+
+Below is a poem with certain words all caps.
+Write a program that asks a number of questions.
+It then prints a personalized version of this poem,
+with the all caps words replaced according to the answers.
+
+================================================
+Santa has thought for at least an hour
+About which food ROBIN should devour
+ROBIN told him FRIED CHICKEN is best
+So he decides to put that to the test 
+He also knows BLUE is the ROBIN's favorite color
+So on a BLUE box he spends his last dollar
+Please TONIGHT open up this nutritious box 
+And NEXT MORNING you just thoroughly detox
+================================================
+
+Feel free to use a similar poem in your own language instead.
+Though it need not be literature, the result should make sense.

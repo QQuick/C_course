@@ -1,0 +1,2 @@
+Write a function that computes the square root of a number by iteration.
+Look up how to do that in the Internet and check the results of your function in a little test program.

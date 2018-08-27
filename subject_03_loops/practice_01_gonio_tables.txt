@@ -1,0 +1,4 @@
+Write a program that neatly prints out tables for sin, cos and tan with a step size of 0.1 radians, ranging from 0 to 2 * pi.
+Radians, sin, cos and tan should each have their own column, and there should be column headers.
+Look up on the Internet how to compute sin, cos and tan in C.
+Also look up formatting with printf in C.
