@@ -10,6 +10,7 @@ XX = Zephyr
 XXX = Destroyer
 XXXX = Cruiser
 
+Ships can be layed out horizontally or vertically.
 You can guess coordinates of a ship and fire a missile.
 A ship is sunk if all it's X'es are hit.
 If all ships are sunk the game terminates.
